@@ -3,6 +3,8 @@ name = "amnion"
 authors = ["Soc Virnyl Estela <socvirnyl.estela@gmail.com>"]
 version = "0.1.0"
 edition = "2021"
+include = ["src/**/*", "LICENSE", "README.md", "assets/*", "docs/*"]
+rust-version = "1.59"
 
 [workspace]
 members = [
