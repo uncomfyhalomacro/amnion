@@ -4,8 +4,14 @@ authors = ["Soc Virnyl Estela <socvirnyl.estela@gmail.com>"]
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+members = [
+  "amnion-backend",
+  "amnion-frontend"
+]
 
 [dependencies]
 megalodon = { version = "0.1" }
 iced = "0.4"
+amnion-backend = { path = "amnion-backend/", version = "0.1.0" }
+amnion-frontend = { path = "amnion-frontend", version = "0.1.0" }
