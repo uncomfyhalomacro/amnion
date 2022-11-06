@@ -1,8 +1,12 @@
 [package]
 name = "amnion"
 authors = ["Soc Virnyl Estela <socvirnyl.estela@gmail.com>"]
+description = "A desktop client for Mastodon written in Rust. Built with iced-rs."
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+readme = "README.md"
+homepage = "https://codeberg.org/uncomfyhalomacro/amnion"
 include = ["src/**/*", "LICENSE", "README.md", "assets/*", "docs/*"]
 rust-version = "1.59"
 
@@ -13,7 +17,15 @@ members = [
 ]
 
 [dependencies]
+anyhow = "1.0.65"
+iced = "0.4.2"
+iced_aw = { version = "0.2.0", features = ["tabs", "modal", "card"], default-features = false }
+iced_native = "0.5.1"
 megalodon = { version = "0.1" }
-iced = "0.4"
+native-dialog = "0.6.3"
+shared_child = "1.0.0"
+strum = { version = "0.24.1", features = ["derive"] }
+
+# Local crates
 amnion-backend = { path = "amnion-backend/", version = "0.1.0" }
 amnion-frontend = { path = "amnion-frontend", version = "0.1.0" }
