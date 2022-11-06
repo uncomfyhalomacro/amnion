@@ -6,6 +6,7 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 readme = "README.md"
+repository = "https://codeberg.org/uncomfyhalomacro/amnion"
 homepage = "https://codeberg.org/uncomfyhalomacro/amnion"
 include = ["src/**/*", "LICENSE", "README.md", "assets/*", "docs/*"]
 rust-version = "1.59"
