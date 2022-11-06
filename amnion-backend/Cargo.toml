@@ -1,8 +1,15 @@
 [package]
 name = "amnion-backend"
+authors = ["Soc Virnyl Estela <socvirnyl.estela@gmail.com>"]
+description = "Backend library for amnion"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.65"
+megalodon = { version = "0.1" }
+native-dialog = "0.6.3"
+shared_child = "1.0.0"
+strum = { version = "0.24.1", features = ["derive"] }
